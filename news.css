@@ -258,6 +258,7 @@ a {
   display: flex;
   transition: transform 0.5s ease-in-out;
   transition: all 1s;
+  
 }
 
 /* 单张图片样式 */
@@ -357,13 +358,14 @@ a {
               }
                .image {
                   background-image: url(https://cityu.edu.mo/wp-content/uploads/2021/08/rector-1.jpg);
-                  width: 50%;
+                  width: 550px;
                   height: 300px;
                   background-repeat: round;
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
+                  float:right
               }
               .image_icon {
                   width: 50px;
@@ -382,7 +384,7 @@ a {
                       margin-top: 0px;
                       margin-bottom: 0px;
                       background-image: url(https://cityu.edu.mo/wp-content/uploads/2021/03/video-cover.jpg);
-                      width: 69.5%;
+                      width: 95%;
                       height: 443px;
                       background-repeat: round;
                       display: flex;
@@ -391,7 +393,7 @@ a {
                       align-items: center;
                   }
 .video_icon {
-                      width: 50px;
+                      width: 60px;
                       height: 50px;
                       background: url(https://cityu.edu.mo/wp-content/themes/cityu/images/index/icon/play.png) no-repeat;
                       background-size: 100% 100%;
@@ -401,10 +403,10 @@ a {
                   .narrate {
                       text-align: left;
                       background-color: #fff;
-                      width: 42.5%;
+                      width: 350px;
                       height: 375px;
                       margin-top: 0px;
-                      margin-left: -350px;
+                      margin-right: 50px;
                       display: flex;
                       flex-direction: column;
                       justify-content: center;
@@ -425,7 +427,7 @@ a {
                   
                   .modal-content {
                       background-color: #fff;
-                      margin: 15% auto;
+                      margin: 20% auto;
                       padding: 20px;
                       border: 1px solid #888;
                       width: 80%;
@@ -450,9 +452,9 @@ a {
 .col-sm {
                       padding: 0px;
                       margin:  0px;
-                      width: 19.31%;
+                      width: 90%;
                   }
-.row {                 
+.row {                
                       margin:0;
                       display: flex;
                       justify-content: center;
