@@ -1,0 +1,610 @@
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    color: #008264;
+    font-weight: 400;
+    font-size: 45px;
+}
+a{text-decoration: none;
+  color: inherit;}
+.p1{
+    font-family: 'Oswald', sans-serif;
+    color:gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.pic {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.div1{
+    position:absolute;
+    right:60px;
+    top: 660px;
+}
+
+.text-box {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  display: none; /* 默认不显示文本框 */
+  font-size: 15px;
+}
+/* js */
+.love{
+  height: 300px;
+}
+.bao{
+    width: 100%;
+    background-color: #eeeeee;
+    position: relative;
+}
+.title1 {
+    font-family: 'Oswald', sans-serif;
+    color: #008264;
+    font-weight: 400;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.pic2{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    width: 75%; 
+    height: auto;
+    z-index: 0;
+}
+
+.exam{
+    text-align: left;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute; /* 绝对定位 */
+    right: 10px; /* 靠右对齐 */
+    top: 170px;
+}
+/* 上面 列表 */
+.li1{
+    list-style-type: none;
+    border-bottom: 1px solid #ccc; /* 添加灰色的底线 */
+    padding-bottom: 5px; /* 为底线和文本之间添加一些间距 */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.a1{color: black;
+    font-family: "Times New Roman", "微軟正黑體";
+    font-size: 20px;
+}
+
+.arr{
+    margin: 1px 30px 0px 0px;
+    float:right;
+    margin-left:200px
+}
+.div3{
+    margin:0 auto;
+    bottom: 20px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.p3{
+    font-family: 'Oswald', sans-serif;
+    color: #008264;
+    font-size: 20px;
+    border:2px solid green;
+    padding: 10px 25px;
+}
+
+
+/* 以上zhen */
+
+.college-container {
+    display: flex; /*将容器设置为弹性布局*/
+    flex-wrap: wrap;/*当容器内的元素超出容器宽度时，允许元素换行*/
+    justify-content: center;/*将容器内的元素在水平方向上居中对齐*/
+  }
+
+  .college-item {
+    margin: 5px;/*给元素设置 5 像素的外边距*/
+    text-align: center;/*将元素内的文本居中对齐*/
+    cursor: pointer;/*鼠标悬停在元素上时，鼠标指针变成手型，表示该元素是可点击的*/
+  }
+  .college-item img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s;}/*当元素发生变化时（如鼠标悬停），添加一个 0.3 秒的过渡效果*/
+  .college-item p {
+    margin-top: 5px;/*给段落元素设置 5 像素的上外边距*/
+    transition: color 0.3s;/*当元素的颜色发生变化时，添加一个 0.3 秒的过渡效果*/
+  }
+
+  .college-item:hover p {
+    color: green; /* 鼠标悬停时改变文字颜色 */
+  }
+  #break{
+      flex-basis: 100%;/*将元素的基础宽度设置为 100%，这通常用于强制换行*/
+      height:0/*将元素的高度设置为 0。*/
+  }
+  .back{
+    background-color: white;
+  }
+
+  h1{font-size: 60px;/*将标题的字体大小设置为 60 像素*/
+      color: green;}/*将标题的颜色设置为绿色
+
+
+/* 以上 zhangyq*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  color: #aaa;
+}
+
+/* 一级菜单项 */
+.nav-list>li {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-list>li>a {
+  display: block;
+  padding: 10px 20px;
+  /* color: #aaa; */
+  transition: background-color 0.3s;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link1 {
+  color: #aaa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: rgb(0, 109, 84);
+}
+
+.nav-link1:hover {
+  color: green;
+}
+
+.sub-menu,
+.sub-sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.sub-menu li,
+.sub-sub-menu li {
+  position: relative;
+}
+
+.sub-menu li>a,
+.sub-sub-menu li>a {
+  display: block;
+  padding: 6px 20px;
+  color: #aaa;
+
+}
+
+.sub-menu li>a:hover,
+.sub-sub-menu li>a:hover {
+  color: green;
+}
+
+.sub-sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+.nav-list>li:hover>.sub-menu,
+.sub-menu li:hover>.sub-sub-menu {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+
+.nav2 {
+  background-color: rgb(0, 130, 100);
+  text-align: center;
+  font-size: 22px;
+}
+
+.sub-link,
+.sub-sub-link {
+  font-size: 16px;
+}
+
+
+/* 轮播图 */
+.pic8{
+  position: relative;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin: auto;
+  transition: all 1s;
+}
+
+/* 图片容器 */
+.pic-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transition: all 1s;
+}
+
+/* 单张图片样式 */
+.pic-image {
+  min-width: 100%;
+  height: 100%;
+}
+
+/* 隐藏非活动图片 */
+.pic-image:not(.active) {
+  display: none;
+}
+
+/* 导航按钮样式 */
+.nav-button {
+  position: absolute;
+  top: 68%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* 单个指示点样式 */
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+/* 以上周 */
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;}
+
+
+.title h1.zh_title{
+          letter-spacing:2px; 
+          font-weight: bold;
+          font-size: 60px; cursor: default;
+          word-break: break-word;
+          font-family: 隶书;
+          }
+
+.a_rector {
+              padding: 0 40px;
+              background-color: #EEE;
+              padding-bottom: 15px;
+              }
+.rector_ul {
+                  margin-top: 0px;
+              }
+.rector_ul{
+              width: 100%;
+              margin-top: 0px;
+              margin-left: 0px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: start;
+              }
+.rector-list {
+                  font-size: smaller;
+              }
+
+              .rector-list {
+                  width: 100%;
+                  text-align: center;
+                  background-color: #ccffcc;
+                  font-size: 50px;
+                  margin-top: 0px;
+                  padding: 7% 0;
+                  display: inline-block;
+                  z-index: 4;
+              }
+              
+          
+             
+              .a_rector .rector {
+                  width: 100%;
+                  display: flex;
+                  font-weight: bold;
+                  flex-direction: row;
+              }
+               .image {
+                  background-image: url(https://cityu.edu.mo/wp-content/uploads/2021/08/rector-1.jpg);
+                  width: 50%;
+                  height: 300px;
+                  background-repeat: round;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+              }
+              .image_icon {
+                  width: 50px;
+                  height: 50px;
+                  background: url(https://cityu.edu.mo/wp-content/themes/cityu/images/index/icon/play.png) no-repeat;
+                  background-size: 100% 100%;
+                  display: inline-block;
+                  cursor: pointer;}
+          
+.a_know .know {         margin-top: auto;
+                      width: 100%;
+                      display: flex;
+                      font-weight: bold;
+                  }
+.know_video {
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                      background-image: url(https://cityu.edu.mo/wp-content/uploads/2021/03/video-cover.jpg);
+                      width: 69.5%;
+                      height: 443px;
+                      background-repeat: round;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                  }
+.video_icon {
+                      width: 50px;
+                      height: 50px;
+                      background: url(https://cityu.edu.mo/wp-content/themes/cityu/images/index/icon/play.png) no-repeat;
+                      background-size: 100% 100%;
+                      display: inline-block;
+                      cursor: pointer;
+                  }
+                  .narrate {
+                      text-align: left;
+                      background-color: #fff;
+                      width: 42.5%;
+                      height: 375px;
+                      margin-top: 0px;
+                      margin-left: -350px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: start;
+                      padding: 0 5%;
+                  }
+                  .modal {
+                      display: none;
+                      position: fixed;
+                      z-index: 1;
+                      left: 0;
+                      top: 0;
+                      width: 100%;
+                      height: 100%;
+                      overflow: auto;
+                      background-color: rgba(0, 0, 0, 0.5);
+                  }
+                  
+                  .modal-content {
+                      background-color: #fff;
+                      margin: 15% auto;
+                      padding: 20px;
+                      border: 1px solid #888;
+                      width: 80%;
+                      max-width: 700px;
+                      position: relative;
+                  }
+                  
+                  .close {
+                      color: #aaa;
+                      float: right;
+                      font-size: 28px;
+                      font-weight: bold;
+                      cursor: pointer;
+                  }
+                  
+                  .close:hover,
+                  .close:focus {
+                      color: black;
+                      text-decoration: none;
+                      cursor: pointer;
+                  }
+.col-sm {
+                      padding: 0px;
+                      margin:  0px;
+                      width: 19.31%;
+                  }
+.row {                 
+                      margin:0;
+                      display: flex;
+                      justify-content: center;
+                  }
+                  .a_base {
+                      padding: 0px;
+                      background-color: #FFF;
+                  }
+                  .hover1 div {
+                      padding: 8px;
+                  }
+.a3{color: black;
+  font-family: "Times New Roman", "微軟正黑體";
+  font-size: 18px;}
+/* 以上孙 */
+
+.study_ {background-size: 100% 120%;
+  background-image: url(https://cityu.edu.mo/wp-content/uploads/2021/03/banner.jpg);
+  text-align: center;background-repeat: no-repeat;}
+.container {max-width: 100%;
+  width: 100%;}
+.a_study {padding: 0 35px }
+.title2 {font-family: 'Oswald', sans-serif;font-weight: 400;}
+.title2 {color: #fff;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+      font-weight:bold;
+      font-size: 40px;
+      cursor: default;
+      word-break: break-word;padding-top: 30px;text-indent:-80px;}
+.zh_title1 {font-family: "Times New Roman", "微軟正黑體";
+      letter-spacing: 2px;
+      font-weight:bold;
+      font-size: 40px;
+      cursor: default;
+      word-break: break-word;padding-top: 30px;text-indent:-80px;}
+.study {padding: 8px 2px;
+      display: flex;
+      margin-bottom: 40px;}
+.study_block {margin-left: 30px;
+          width: 45%;
+          background-color: #fff;margin-bottom:40px ;}
+.study-list {width: 100%;
+          font-size: 19px;
+          font-weight: normal;
+          text-align: left;
+          margin-bottom: 5px;}
+.item {
+          margin-left: 1%;
+          margin-top: 15px;
+          height: 40px;
+          border-bottom: 1px solid #C5C5C5;}
+
+      
+.imgdiv {
+  
+  background-color: #fff;
+ 
+  margin-bottom: 20px;
+  right: 10px; /* 靠右对齐 */
+  
+      }
+ul {list-style-type: none;}
+
+.hh {color: #3f3f3f;
+  display: inline-block;
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: inherit;
+  font-family: "Times New Roman", "微軟正黑體";
+  text-decoration: none}
+  /* 以上zyy */
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+}
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+
+    .footer {
+        background-color: #008364;
+        color: #ffffff;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer .section {
+        flex: 1;
+        padding: 10px;
+        min-width: 0px;
+    }
+
+    .footer .section h4 {
+        font-size: 18px;
+        
+  margin-bottom: 5px; /* 每个 h4 之间的间距 */
+        margin-right: 10px;  /* 设置右边的间距 */
+    }
+
+    .footer .section a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .footer .contact-info {
+        font-size: 14px;
+    }
+
+    .footer .contact-info p {
+        margin: 5px 0;
+    }
+
+    .footer .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .footer .social-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .footer .logo img {
+        max-width: 200px;
+    }
+
+    .footer .quick-links {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .footer .quick-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    /* 以上fyz */

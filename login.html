@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>澳門城市大學 - 中央認證系統</title>
+ <link rel="stylesheet" href="https://login.cityu.edu.mo/cas/css/cas.css;jsessionid=605BC67E9EC3B7A34802396179A728B6" />
+  <link rel="stylesheet" href="https://login.cityu.edu.mo/cas/css/cas-ext.css;jsessionid=605BC67E9EC3B7A34802396179A728B6" />
+  <link rel="icon" href="https://login.cityu.edu.mo/cas/images/favicon.ico;jsessionid=605BC67E9EC3B7A34802396179A728B6" type="image/x-icon" />
+  <script src="js/jquery.min.js" defer></script>
+  <script src="js/jquery-ui.min.js" defer></script>
+  <script src="login.js" defer></script>
+  <script src="/cas/js/cas.js" defer></script>
+</head>
+<body id="cas">
+  <div id="container">
+    <div id="content">
+      <div class="box" id="login">
+        <form id="fm1" action="/cas/login;jsessionid=605BC67E9EC3B7A34802396179A728B6?ui_locales=zh-MO&service=https%3A//tronclass.cityu.edu.mo/login%3Fnext%3D/user/index&locale=zh_MO&ts=1732002516.502682" method="post">
+          <div class="logo"></div>
+          <section class="row">
+            <label for="username"><span class="accesskey">U</span>sername(Teacher No./Student No.):
+              <span id="username-warning" style="display:none;">username is required</span>
+            </label>
+            <input id="username" name="username" class="required" tabindex="1" accesskey="e" type="text" value="" size="25" autocomplete="off" placeholder="请输入用户名">
+          </section>
+          <section class="row">
+            <label for="password"><span class="accesskey">P</span>assword(Same as URP platform):
+              <span id="password-warning" style="display:none;">password is required</span>
+            </label>
+            <input id="password" name="password" class="required" tabindex="2" accesskey="p" type="password" value="" size="25" autocomplete="off" placeholder="请输入密码">
+          </section>
+          <section class="row btn-row">
+            <input type="hidden" name="lt" value="LT-573933-CI0bkgIygeAMLVf42bqz1VDvAi6MG0-tronclass.cityu.edu.mo">
+            <input type="hidden" name="execution" value="e1s1" />
+            <input type="hidden" name="_eventId" value="submit" />
+            <input class="btn-submit" id="submit" name="submit" accesskey="l" value="LOGIN" tabindex="4" type="submit" />
+          </section>
+        </form>
+      </div>
+    </div> 
+  </div> 
+</body>
+
+  </div> 
+  <script>
+    document.querySelector('#fm1').addEventListener('submit', function (e) {
+    e.preventDefault();
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    if (username === 'emma' && password === '0101') {
+      // 当用户名和密码正确时，跳转到下一个网页，这里假设下一个网页地址是https://nextpage.example.com，可根据实际修改
+      window.location.href = 'file:///C:/Users/%E9%9B%A8%E5%B7%A7/Desktop/web%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/%E5%9F%8E%E5%A4%A7%E9%A6%96%E9%A1%B5.html';
+    } else {
+      alert('用户名或密码错误，请重新输入。');
+    }
+  });
+  </script>
+</body>
